@@ -21,7 +21,8 @@ func main() {
 			} else {
 				fmt.Printf("%s", spacex)
 			}
-			if i == lenghtBoard {
+			switch i {
+			case lenghtBoard:
 				fmt.Printf("%s", "\n")
 			}
 		}
