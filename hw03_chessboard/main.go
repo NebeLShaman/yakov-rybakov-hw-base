@@ -6,10 +6,10 @@ import (
 
 func main() {
 	var (
-		hashtag     string = "[#]"
-		spacex      string = "[ ]"
-		lenghtBoard        = 8
-		heightBoard        = 8
+		hashtag     = "[#]"
+		spacex      = "[ ]"
+		lenghtBoard = 8
+		heightBoard = 8
 	)
 
 	for j := 1; j <= heightBoard; j++ {
