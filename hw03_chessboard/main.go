@@ -14,17 +14,15 @@ func main() {
 
 	for j := 1; j <= heightBoard; j++ {
 		for i := 1; i <= lenghtBoard; i++ {
-			if i%2 == 0 && j%2 == 0 {
+			switch {
+			case i%2 == 0 && j%2 == 0:
 				fmt.Printf("%s", hashtag)
-			} else if i%2 != 0 && j%2 != 0 {
+			case i%2 == 1 && j%2 == 1:
 				fmt.Printf("%s", hashtag)
-			} else {
+			default:
 				fmt.Printf("%s", spacex)
 			}
-			switch i {
-			case lenghtBoard:
-				fmt.Printf("%s", "\n")
-			}
 		}
+		fmt.Printf("%s", "\n")
 	}
 }
