@@ -23,7 +23,7 @@ func main() {
 
 	staff, err = reader.ReadJSON(path)
 
-	fmt.Println(err)
+	fmt.Print(err)
 
 	printer.PrintStaff(staff)
 }

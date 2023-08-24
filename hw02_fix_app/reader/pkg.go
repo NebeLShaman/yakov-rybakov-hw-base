@@ -29,6 +29,7 @@ func ReadJSON(filePath string) ([]types.Employee, error) {
 		fmt.Printf("Error: %v", err)
 		return nil, nil
 	}
+
 	res := data
 
 	return res, nil
