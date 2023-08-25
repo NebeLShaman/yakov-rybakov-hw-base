@@ -17,8 +17,7 @@ input_data:
 	fmt.Fscan(os.Stdin, &lenghtBoard)
 	fmt.Println("Введите целое положительное число больше 0 определяющее высоту доски:")
 	fmt.Fscan(os.Stdin, &heightBoard)
-	switch {
-	case lenghtBoard <= 0 || heightBoard <= 0:
+	if lenghtBoard <= 0 || heightBoard <= 0 {
 		fmt.Printf("%s", "Ширина или высота не может быть равна или меньше 0, укажите корректные размеры.\n")
 		goto input_data
 	}
